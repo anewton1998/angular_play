@@ -3,7 +3,7 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
-    <mat-toolbar>SnarkFail</mat-toolbar>
+    <mat-toolbar>{{appConfig.menuName}}</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#"><mat-icon matListIcon>location_city</mat-icon>Local Posts</a>
       <a mat-list-item href="#"><mat-icon matListIcon>public</mat-icon>Federated Posts</a>
